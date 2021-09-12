@@ -9,6 +9,7 @@ header{
     top: 0%;
     width: 100%;
     background: #1f203a;
+    z-index: 1;
 }
 .navbar{
  height: 70px;
