@@ -81,6 +81,9 @@ body{
     text-align: center;
     font-size: 14px;
     color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 .footer .name{
     font-size: 20px;
