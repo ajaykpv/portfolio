@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
+    <div class="link-section" id="link">
+        <div style="float: right; font-size:70px;">
+            <a href="#" class="navlink-mobile" onclick="closeFunction()">   <i>&times;</i></a>
+        </div>
+        <ul>
+            <li><a href="#about" class="nav-link" onclick="closeFunction()">About</a></li>
+        <li>   <a href="#work" class="nav-link" onclick="closeFunction()">Work</a></li>
+        <li><a href="#contact" class="nav-link" onclick="closeFunction()">Contact</a></li>
+    </ul>
+    </div>
    
         <header>
             <nav class="navbar">  
                 <div>
                     <img src="./assets/image/logo.png" alt="logo.png" class="nav-logo">
                     <div class="topnav-right">
-                        <a href="#about" class="navlink">About</a>
-                        <a href="#work" class="navlink">Work</a>
-                        <a href="#contact" class="navlink">Contact</a>
+                        <section class="links">
+                            <a href="#about" class="navlink">About</a>
+                            <a href="#work" class="navlink">Work</a>
+                            <a href="#contact" class="navlink">Contact</a>
+                        </section>
+                        <a href="#" class="navlink-mobile" onclick="myFunction()">
+                        <i class="fa fa-bars" style="font-size: xxx-large;" aria-hidden="true" ></i>
+                        </a >
                         <!-- <a href='#' class="navlink" >&#9776;</a> -->
                     </div>
                 </div>
@@ -31,9 +47,9 @@
                 <span  >portfolio</span>
             </div>
             <div class="about-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rerum dolore aperiam provident sequi distinctio pariatur officiis aliquid magni reiciendis modi ipsam molestiae, fugit ipsum et placeat laudantium cupiditate facere!
+                Lorem ipsum dolor sit amet consectedent sequi distinctio pariatur officiis aliquid magni reiciendis modi ipsam molestiae, fugit ipsum et placeat laudantium cupiditate facere!
                 Lorem ipsum doloquisquam nobis accusantium cum molestiae distinctio vero vel ad exercitationem est maxime qui rem dolorum iusto hic ut culpa id!     
-                    <p style="font-size:small; letter-spacing:4px;  padding-top: 5%;"> image from  <a href="https://www.freepik.com" style="color: inherit;">Freepik</a> </p>
+                    <p style="font-size:small; letter-spacing:4px;  padding-top: 5%;">  </p>
                     <img src="./assets/image/icons8-more-than-90.png" style="margin-top: 20px;" alt="">                        
             </div>   
         </section>      
@@ -54,43 +70,19 @@
              <h2>My Works</h2>
              <div class="image-grid">
                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
+                    <div class="child bg-one"><span>AGRISAFE</span><br><span>A Machine Learning system for preventing animal intrusion to farming area. It comes with an android application. </span></div>
                  </div>
                  <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
-                 </div>
-                 
-                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
+                    <div class="child bg-two"><span>ILUVKERALA</span><br><span>A informative website of Kerala. It is mainly focused to encourage the tourisam sector of Kerala</span></div>
                  </div>
                  
                  <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
-                 </div>
-                 
-                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
-                 </div>
-                 
-                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
-                 </div>
-                 
-                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
-                 </div>
-                 
-                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
-                 </div>
-                 
-                 <div class="image-grid-block" onclick="">
-                    <div class="child bg-one"><span>work1</span><br><span>work1</span></div>
+                    <div class="child bg-three"><span>CODESTAT</span><br><span>A website for the competitive coders.it gives the details about different competitions in different platforms.</span></div>
                  </div>
               
             </div>
             <div class="learnmore">
-                <p> image from  <a href="https://www.freepik.com" >Freepik</a> </p>
+                <!-- <p> image from  <a href="https://www.freepik.com" >Freepik</a> </p> -->
                 <button href="#"> LEARN MORE </button>
             </div>
        </section>
@@ -126,5 +118,14 @@
         project by<span class="footer name"> Ajay Krishnan </span>
         </footer>
 </body>
-
+<script  >
+    function myFunction() {
+  var x = document.getElementById("link");
+  x.style.display="block"
+}
+function closeFunction() {
+  var x = document.getElementById("link");
+  x.style.display="none"
+}
+</script>
 </html>
